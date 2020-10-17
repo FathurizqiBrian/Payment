@@ -1,0 +1,102 @@
+
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+ .lobilists .lobilist {
+  box-shadow: none; }
+
+.lobilists .lobilist.lobilist-primary {
+  border-color: rgba(0, 0, 0, 0.1); }
+  .lobilists .lobilist.lobilist-primary .lobilist-header,
+  .lobilists .lobilist.lobilist-primary .lobilist-footer,
+  .lobilists .lobilist.lobilist-primary .lobilist-form-footer {
+    border-color: #7460ee;
+    background-color: #7460ee; }
+
+.lobilists .lobilist.lobilist-danger {
+  border-color: rgba(0, 0, 0, 0.1); }
+  .lobilists .lobilist.lobilist-danger .lobilist-header,
+  .lobilists .lobilist.lobilist-danger .lobilist-footer,
+  .lobilists .lobilist.lobilist-danger .lobilist-form-footer {
+    border-color: #fa5838;
+    background-color: #fa5838; }
+
+.lobilists .lobilist.lobilist-info {
+  border-color: rgba(0, 0, 0, 0.1); }
+  .lobilists .lobilist.lobilist-info .lobilist-header,
+  .lobilists .lobilist.lobilist-info .lobilist-footer,
+  .lobilists .lobilist.lobilist-info .lobilist-form-footer {
+    border-color: #137eff;
+    background-color: #137eff; }
+
+.lobilists .lobilist.lobilist-success {
+  border-color: rgba(0, 0, 0, 0.1); }
+  .lobilists .lobilist.lobilist-success .lobilist-header,
+  .lobilists .lobilist.lobilist-success .lobilist-footer {
+    border-color: #5ac146;
+    background-color: #5ac146; }
+
+.lobilists .lobilist-footer,
+.lobilists .lobilist-form-footer {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  background: rgba(0, 0, 0, 0.02) !important; }
+
+.lobilists .btn-link {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: #343a40 !important; }
+
+.lobilists.single-line {
+  height: 500px; }
+
+.lobilist,
+.lobilists {
+  position: relative; }
+
+.lobilists [type="checkbox"]:not(:checked),
+.lobilists [type="checkbox"]:checked {
+  opacity: 1;
+  position: relative; }
+
+.lobilists .lobilist-item {
+  margin-bottom: 16px;
+  padding-top: 5px; }
+
+.lobilists .lobilist-item-title {
+  color: #343a40; }
+
+.lobilists .lobilist-item-description {
+  font-style: normal;
+  font-size: 13px; }
+
+.lobilists .lobilist-check {
+  top: 10px; }
+
+.lobilists .lobilist-item-duedate {
+  position: relative;
+  font-size: 12px;
+  left: 0px; }
+
+.lobilists .lobilist-actions {
+  top: 0px; }
+
+.lobilist-actions .btn i {
+  font-size: 15px;
+  vertical-align: middle; }

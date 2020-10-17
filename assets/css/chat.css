@@ -1,0 +1,194 @@
+
+/*******************/
+/*Chat widget*/
+/*******************/
+.chat-box {
+  overflow: auto; }
+
+.chat-list {
+  margin: 0px;
+  padding: 0px; }
+  .chat-list .chat-item {
+    list-style: none;
+    margin-top: 30px; }
+    .chat-list .chat-item .chat-img {
+      display: inline-block;
+      width: 45px;
+      vertical-align: top; }
+      .chat-list .chat-item .chat-img img {
+        width: 45px;
+        border-radius: 100%; }
+    .chat-list .chat-item .chat-content {
+      width: calc(100% - 50px);
+      display: inline-block;
+      padding-left: 15px; }
+      .chat-list .chat-item .chat-content .box {
+        display: inline-block;
+        padding: 10px;
+        margin-bottom: 3px;
+        color: #343a40;
+        background: #f6f8f9; }
+    .chat-list .chat-item .chat-time {
+      display: block;
+      font-size: 10px;
+      color: #4F5467;
+      margin: 5px 0 15px 65px; }
+    .chat-list .chat-item.odd .chat-content {
+      text-align: right;
+      width: calc(100% - 0px); }
+    .chat-list .chat-item.odd .chat-time {
+      text-align: right; }
+    .chat-list .chat-item.odd .box {
+      clear: both;
+      color: #fff;
+      background: #137eff; }
+    .chat-list .chat-item.odd + .odd {
+      margin-top: 0px; }
+    .chat-list .chat-item.reverse {
+      text-align: right; }
+      .chat-list .chat-item.reverse .chat-time {
+        text-align: left; }
+      .chat-list .chat-item.reverse .chat-content {
+        padding-left: 0px;
+        padding-right: 15px; }
+
+/*******************/
+/*Chat widget*/
+/*******************/
+.chat-windows {
+  position: fixed;
+  bottom: 0px;
+  right: 300px;
+  height: 350px;
+  max-height: 350px;
+  z-index: 9999;
+  transition: 600ms; }
+  .chat-windows.show-chat {
+    bottom: 0px; }
+  .chat-windows.hide-chat {
+    bottom: -350px; }
+  .chat-windows .user-chat {
+    min-width: 300px;
+    min-height: 350px;
+    background-color: #fff;
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    float: right;
+    margin: 0 2px 0 0; }
+    .chat-windows .user-chat.mini-chat {
+      min-width: 40px;
+      min-height: 40px;
+      bottom: 0px;
+      top: 310px;
+      position: relative; }
+      .chat-windows .user-chat.mini-chat .chat-head .name,
+      .chat-windows .user-chat.mini-chat .chat-head i,
+      .chat-windows .user-chat.mini-chat .chat-footer,
+      .chat-windows .user-chat.mini-chat .chat-body {
+        display: none; }
+      .chat-windows .user-chat.mini-chat .chat-head img {
+        margin: 0; }
+      .chat-windows .user-chat.mini-chat .chat-head .status {
+        left: 28px;
+        top: 10px; }
+    .chat-windows .user-chat .chat-head {
+      height: 40px;
+      padding: 10px;
+      background-color: #137eff;
+      color: #fff;
+      position: relative; }
+      .chat-windows .user-chat .chat-head img {
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        vertical-align: middle;
+        margin: -4px 8px 0 0;
+        display: inline-block;
+        cursor: pointer; }
+      .chat-windows .user-chat .chat-head .status {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        left: 28px;
+        top: 7px; }
+      .chat-windows .user-chat .chat-head .online {
+        background-color: #5ac146; }
+      .chat-windows .user-chat .chat-head .busy {
+        background-color: #fa5838; }
+      .chat-windows .user-chat .chat-head .away {
+        background-color: #fb8c00; }
+      .chat-windows .user-chat .chat-head .offline {
+        background-color: #ffbc34; }
+      .chat-windows .user-chat .chat-head i {
+        font-size: 14px;
+        float: right;
+        color: #fff;
+        margin: 3px 0 0 5px;
+        cursor: pointer; }
+    .chat-windows .user-chat .chat-footer {
+      padding: 0px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
+      .chat-windows .user-chat .chat-footer .form-control {
+        background-color: transparent;
+        color: #6a7a8c;
+        font-size: 14px;
+        border: 0px;
+        width: 100%;
+        height: 40px; }
+        .chat-windows .user-chat .chat-footer .form-control:focus, .chat-windows .user-chat .chat-footer .form-control:hover {
+          border: 0px; }
+    .chat-windows .user-chat .chat-body {
+      height: 270px;
+      padding: 15px 15px 0;
+      background-color: #f2f4f5;
+      overflow: hidden;
+      max-width: 300px;
+      position: relative; }
+
+.chat-list {
+  margin: 0px;
+  padding: 0px; }
+  .chat-list .msg_receive, .chat-list .msg_sent {
+    list-style: none;
+    margin-top: 30px; }
+    .chat-list .msg_receive .chat-img, .chat-list .msg_sent .chat-img {
+      display: inline-block;
+      width: 45px;
+      vertical-align: top; }
+      .chat-list .msg_receive .chat-img img, .chat-list .msg_sent .chat-img img {
+        width: 100%;
+        border-radius: 100%; }
+    .chat-list .msg_receive .chat-content, .chat-list .msg_sent .chat-content {
+      width: calc(100% - 50px);
+      display: inline-block;
+      padding-left: 15px; }
+      .chat-list .msg_receive .chat-content .box, .chat-list .msg_sent .chat-content .box {
+        display: inline-block;
+        padding: 10px;
+        margin-bottom: 3px;
+        background: #fff; }
+    .chat-list .msg_receive .chat-time, .chat-list .msg_sent .chat-time {
+      display: block;
+      font-size: 10px;
+      color: #afb5c1;
+      margin: 5px 0 15px 15px; }
+    .chat-list .msg_receive.odd .chat-content, .chat-list .msg_sent.odd .chat-content {
+      text-align: right;
+      width: calc(100% - 0px); }
+      .chat-list .msg_receive.odd .chat-content .box, .chat-list .msg_sent.odd .chat-content .box {
+        clear: both;
+        color: #fff;
+        background: #137eff; }
+    .chat-list .msg_receive.odd .chat-time, .chat-list .msg_receive .reverse, .chat-list .msg_sent.odd .chat-time, .chat-list .msg_sent .reverse {
+      text-align: right; }
+    .chat-list .msg_receive.odd + .odd, .chat-list .msg_sent.odd + .odd {
+      margin-top: 0px; }
+    .chat-list .msg_receive.reverse .chat-content, .chat-list .msg_sent.reverse .chat-content {
+      padding-left: 0px;
+      padding-right: 15px; }
+    .chat-list .msg_receive.reverse .chat-time, .chat-list .msg_sent.reverse .chat-time {
+      text-align: left; }
+
+.mailbox .chat-scroll {
+  height: calc(100vh - 100px); }
