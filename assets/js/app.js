@@ -32,7 +32,7 @@ $.fn.AdminSettings = function(settings) {
             var themeview = settings.Theme;
             switch (settings.Layout) {
                 case 'vertical':
-                    if (themeview == true) {
+                    if (themeview === true) {
                         $('body').attr("data-theme", 'dark');
                         $("#theme-view").prop("checked", !0);
                     } else {
@@ -233,14 +233,14 @@ $.fn.AdminSettings = function(settings) {
             var headerposition = settings.HeaderPosition;
             switch (settings.Layout) {
                 case 'vertical':
-                    if (sidebarposition == true) {
+                    if (sidebarposition === true) {
                         $('#' + myid).attr("data-sidebar-position", 'fixed');
                         $("#sidebar-position").prop("checked", !0);
                     } else {
                         $('#' + myid).attr("data-sidebar-position", 'absolute');
                         $("#sidebar-position").prop("checked", !1);
                     }
-                    if (headerposition == true) {
+                    if (headerposition === true) {
                         $('#' + myid).attr("data-header-position", 'fixed');
                         $("#header-position").prop("checked", !0);
                     } else {
@@ -257,7 +257,7 @@ $.fn.AdminSettings = function(settings) {
             var boxedlayout = settings.BoxedLayout;
             switch (settings.Layout) {
                 case 'vertical':
-                    if (boxedlayout == true) {
+                    if (boxedlayout === true) {
                         $('#' + myid).attr("data-boxed-layout", 'boxed');
                         $("#boxed-layout").prop("checked", !0);
                     } else {
@@ -266,7 +266,7 @@ $.fn.AdminSettings = function(settings) {
                     }
                     break;
                 case 'horizontal':
-                    if (boxedlayout == true) {
+                    if (boxedlayout === true) {
                         $('#' + myid).attr("data-boxed-layout", 'boxed');
                         $("#boxed-layout").prop("checked", !0);
                     } else {
@@ -325,7 +325,7 @@ $(function() {
         }
     });
     $(document).on('keypress', ".chat-windows .user-chat .chat-footer input", function(e) {
-        if (e.keyCode == 13) {
+        if (e.keyCode === 13) {
             var id = $(this).attr("data-user-id");
             var msg = $(this).val();
             msg = msg_sent(msg);
